@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: context-shield-api
+    env: python
+    buildCommand: ""
+    startCommand: uvicorn app.api:app --host 0.0.0.0 --port $PORT
+    plan: free
